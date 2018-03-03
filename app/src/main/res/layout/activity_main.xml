@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="It's all about the coffee!"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1: Where was coffee first discovered?"/>
+
+            <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/question_one_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Ethiopia"/>
+                <RadioButton
+                    android:id="@+id/question_one_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Turkey"/>
+                <RadioButton
+                    android:id="@+id/question_one_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Brazil"/>
+                <RadioButton
+                    android:id="@+id/question_one_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Columbia"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Question 2: What is the ideal brewing time for a French press?"/>
+
+            <EditText
+                android:id="@+id/question_two_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="# between 30 to 480 seconds"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Question 3: Which of these are the names of the most common types of coffee bean?"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/question_three_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Ristretto and Tactera"/>
+                <RadioButton
+                    android:id="@+id/question_three_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Arabica and Robusta"/>
+                <RadioButton
+                    android:id="@+id/question_three_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Liberica and Acaisa"/>
+                <RadioButton
+                    android:id="@+id/question_three_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Laurina and Topponta"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Question 4: How large is a shot of espresso?"/>
+
+            <EditText
+                android:id="@+id/question_four_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="# between 50 to 100 ML"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bonus: What toppings did we use in our Just Java App?"/>
+
+            <CheckBox
+                android:id="@+id/question_five_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Marshmallow"/>
+            <CheckBox
+                android:id="@+id/question_five_b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Whipped Cream"/>
+            <CheckBox
+                android:id="@+id/question_five_c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Java chip"/>
+            <CheckBox
+                android:id="@+id/question_five_d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Chocolate"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:onClick="submitButton"/>
+
+        <TextView
+            android:id="@+id/quiz_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="36sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
